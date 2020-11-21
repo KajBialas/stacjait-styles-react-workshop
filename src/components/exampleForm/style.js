@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const basicComponentStyle = css`
   color: #000;
@@ -20,4 +21,7 @@ export const StyledInput = styled.input`
   border: 1px solid red;
   
   ${basicComponentStyle}
+`;
+
+export const StyledLink = styled(NavLink)`
 `;
