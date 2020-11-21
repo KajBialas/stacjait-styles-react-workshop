@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './cssExampleElement.scss';
+import styles from './cssExampleElement.module.scss';
+import classNames from 'classnames';
 
 function CssExampleElement() {
   const [ active, setActive ] = useState(false);
@@ -12,14 +13,21 @@ function CssExampleElement() {
     backgroundColor: color,
   }
 
+  const containerClassName = classNames(
+    styles.cssExampleElementContainer,
+    {
+      [styles.cssExampleElementContainerActive]: !active,
+    }
+  )
+
   return (
     <div
-      className={active ? 'cssExampleElementContainer' : 'cssExampleElementContainerActive'}
+      className={containerClassName}
       style={cssExampleElementContainerStyle}
     >
-      <button className="cssExampleElementButton" onClick={handleClick}>Change color</button>
+      <button className={styles.cssExampleElementButton} onClick={handleClick}>Change color</button>
       <input type="text" value={color} onChange={handleChange} />
-      <div className="container">
+      <div className={styles.container}>
         dsfsdf
       </div>
     </div>

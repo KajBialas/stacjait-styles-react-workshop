@@ -1,13 +1,13 @@
 import React from 'react';
-import './header.scss';
+import styles from './header.module.scss';
 
 function Header() {
   return (
-    <div className="header">
-      <div className="header__logo">Logo</div>
-      <nav className="header__nav">
-        <a className="header__navElement" href="/">Home page</a>
-        <a className="header__navElement header__navElement--red" href="/">Contact</a>
+    <div className={styles.header}>
+      <div className={styles['header__logo']}>Logo</div>
+      <nav className={styles['header__nav']}>
+        <a className={styles['header__navElement']} href="/">Home page</a>
+        <a className={`${styles['header__navElement']} ${styles['header__navElement--red']}`} href="/">Contact</a>
       </nav>
     </div>
   )

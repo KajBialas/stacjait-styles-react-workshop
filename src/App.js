@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import InlineBackgroundForm from './components/InlineBackgorundForm';
-import './App.scss';
+import styles from './App.module.scss';
 import CssExampleElement from './components/CssExampleElement';
 import Header from './components/Header';
 const ContainerStyle = {
@@ -22,10 +22,10 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Header />
       {/*Aplikacja*/}
-      {/*<CssExampleElement />*/}
+      <CssExampleElement />
     </div>
   );
 }
