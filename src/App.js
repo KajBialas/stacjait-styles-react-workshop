@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import InlineBackgroundForm from './components/InlineBackgorundForm';
 
 const ContainerStyle = {
   color: 'red',
@@ -23,6 +24,8 @@ function App() {
     <div style={ContainerStyle}>
       <h1 style={headerStyle}>Aplikacja</h1>
       <button onClick={handleClick}>Change color</button>
+      <hr/>
+      <InlineBackgroundForm />
     </div>
   );
 }
