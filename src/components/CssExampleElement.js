@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './cssExampleElement.css';
+import './cssExampleElement.scss';
 
 function CssExampleElement() {
   const [ active, setActive ] = useState(false);

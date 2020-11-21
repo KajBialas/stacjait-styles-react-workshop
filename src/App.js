@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import InlineBackgroundForm from './components/InlineBackgorundForm';
-import './App.css';
+import './App.scss';
 import CssExampleElement from './components/CssExampleElement';
 
 const ContainerStyle = {
@@ -22,7 +22,8 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="container">
+      Aplikacja
       <CssExampleElement />
     </div>
   );
