@@ -1,0 +1,15 @@
+.cssExampleElementContainer {
+    background-color: red;
+}
+
+.cssExampleElementContainerActive {
+    background-color: blue;
+}
+
+.cssExampleElementButton {
+    background-color: white;
+}
+
+.cssExampleElementButton:hover {
+    background-color: yellow;
+}

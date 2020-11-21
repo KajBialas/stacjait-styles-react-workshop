@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import InlineBackgroundForm from './components/InlineBackgorundForm';
+import './App.css';
+import CssExampleElement from './components/CssExampleElement';
 
 const ContainerStyle = {
   color: 'red',
-  backgroundColor: 'blue',
 }
 
 const HeaderStyle = {
@@ -21,11 +22,8 @@ function App() {
   }
 
   return (
-    <div style={ContainerStyle}>
-      <h1 style={headerStyle}>Aplikacja</h1>
-      <button onClick={handleClick}>Change color</button>
-      <hr/>
-      <InlineBackgroundForm />
+    <div>
+      <CssExampleElement />
     </div>
   );
 }
