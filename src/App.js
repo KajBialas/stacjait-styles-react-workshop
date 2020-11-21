@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import InlineBackgroundForm from './components/InlineBackgorundForm';
 import './App.scss';
 import CssExampleElement from './components/CssExampleElement';
-
+import Header from './components/Header';
 const ContainerStyle = {
   color: 'red',
 }
@@ -23,8 +23,9 @@ function App() {
 
   return (
     <div className="container">
-      Aplikacja
-      <CssExampleElement />
+      <Header />
+      {/*Aplikacja*/}
+      {/*<CssExampleElement />*/}
     </div>
   );
 }
